@@ -1,12 +1,26 @@
 Description
 ===========
-PHP API wrapper for http://api.themoviedb.org/2.1/. 
-It's mainly written to be used in Drupal modules, Also to be respectful to the coding standards of Drupal community.
+Drupal implementation TMDb API.
 
-Important Notice
-================
-THIS PROJECT IS UNDER HEAVY DEVELOPMENT AND IS NOT READY FOR PRODUCTION. INSTANTIATE AT YOUR OWN RISK!
+Disclaimer
+==========
+This module is in an early development stage, It is not intended to be used in production.
 
-Usage
-=====  
-Read code docs for now.
+Requirements
+============
+  - TMDb API key.
+  - php_curl extension.
+
+Installation
+============
+  - Install the module as usual.
+  - Goto admin/settings/tmdb and setup API settings.
+  - Goto admin/settings/tmdb/test to test TMDb API.
+
+API Usage and Documentation
+===========================
+:)
+
+Author and Maintainer
+=====================
+Sepehr Lajevardi (http://drupal.org/user/668010)
