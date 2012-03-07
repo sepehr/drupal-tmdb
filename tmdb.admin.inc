@@ -104,11 +104,11 @@ function tmdb_admin_api_testing() {
   if (variable_get('tmdb_api_key', FALSE)) {
     // API usage example:
     $TMDb = tmdb();
-    $response = $TMDb->movieGetLatest();
+    $response = $TMDb->movieGetLatest('json');
 
     if ($response) {
       // Get latest movie's image:
-      $image = $TMDb->movieGetImages($response[0]['id']);
+      $image = $TMDb->movieGetImages($response[0]['id'], 'json');
       // Table header/rows setup:
       // These are not translatable for no damn reason!
       $header = array_map('check_plain', array_keys($response[0]));
@@ -126,8 +126,7 @@ function tmdb_admin_api_testing() {
           '<code>' .
             variable_get('tmdb_api_server', 'http://api.themoviedb.org/') .
             variable_get('tmdb_api_version', '2.1') . '/Movie.getLatest/' .
-            variable_get('tmdb_api_language', 'en') . '/' .
-            variable_get('tmdb_api_format', 'json') . '/' .
+            variable_get('tmdb_api_language', 'en') . '/json/' .
             variable_get('tmdb_api_key', 'ERRR_NO_API_KEY') .
           '</code>',
       );
