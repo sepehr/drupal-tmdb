@@ -1,6 +1,6 @@
 Description
 ===========
-Drupal implementation TMDb API.
+Drupal implementation of TMDb API using TMDbPHP library at its heart.
 
 Disclaimer
 ==========
